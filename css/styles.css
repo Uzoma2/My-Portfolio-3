@@ -126,10 +126,10 @@ img{
 /*------------------------------HEADER AND NAV----------------------------*/
 .header{
     position:fixed;
-    background-color: var(--body-color);
     top:0;
     left: 0;
     width: 100%;
+    background-color: var(--body-color);
     box-shadow: 0 3px 9px hsla(0, 0, 0, 0.05);
 }
 
@@ -140,6 +140,7 @@ img{
 .nav{
     height: calc(var(--header-height) + 2.25rem );
     justify-content: space-between;
+    align-items: center;
     
 }
 
@@ -263,6 +264,7 @@ img{
     z-index: 11;
     position: relative;
     vertical-align: middle;
+    height: 450px;
 }
 
 
@@ -459,3 +461,61 @@ padding: 2rem 1.5rem;
     bottom: -1.5rem;
     z-index: 10;
 }
+
+.resume--content{
+    padding-inline: 1.5rem 3rem;
+}
+
+.resume--date-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.resume--title{
+    font-size: var(--h3-font-size);
+}
+
+.resume-date{
+    color: var(--title-color);
+    font-size: var(--large-font-size);
+}
+.resume--description{
+    margin-block: 1.25rem 2rem;
+}
+
+/*------------------------------SKILLS----------------------------*/
+
+.skills{
+background-color: var(--container-color);
+}
+
+.skills--container{
+grid-template-columns: repeat(3, 1fr);
+row-gap: 4rem;
+
+
+
+}
+.skills--title,
+.skills--description{
+
+padding-inline: 1.5rem;
+}
+
+.skills--name{
+
+    font-size: var(--larger-font-size);
+}
+
+.skills--bar{
+
+    height: 1px;
+   background-color: var(--first-color);
+  
+}
+
+.skills--description{
+
+    margin-block: 1rem 1.8rem;
+}
+
